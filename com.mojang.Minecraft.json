@@ -55,7 +55,8 @@
             "name": "minecraft",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm755 apply_extra /app/bin/apply_extra",
+                "tar -xf Minecraft.tar.gz -C /app",
+                "rm -f Minecraft.tar.gz",
                 "install -Dp -m 755 minecraft /app/bin/minecraft",
                 "install -Dp -m 644 com.mojang.Minecraft.desktop /app/share/applications/com.mojang.Minecraft.desktop",
                 "install -Dp -m 644 com.mojang.Minecraft-64.png /app/share/icons/hicolor/64x64/apps/com.mojang.Minecraft.png",
@@ -65,25 +66,16 @@
             ],
             "sources": [
                 {
-                    "type": "extra-data",
-                    "filename": "Minecraft.tar.gz",
+                    "type": "file",
+                    "dest-filename": "Minecraft.tar.gz",
                     "url": "https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1.0.1221.tar.gz",
                     "sha256": "cd9f0b44fc9cec42829cb2e71145ee599f3d34c7715b55963514d0a8d36214ab",
-                    "size": 609508,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://launchermeta.mojang.com/v1/products/launcher/6f083b80d5e6fabbc4236f81d0d8f8a350c665a9/linux.json",
                         "version-pattern": "\"launcher-bootstrap\": \\[\\{.*?name\": \"(.*?)\"",
                         "url-template": "https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_$version.tar.gz"
                     }
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "apply_extra",
-                    "commands": [
-                        "tar -xf Minecraft.tar.gz",
-                        "rm -f Minecraft.tar.gz"
-                    ]
                 },
                 {
                     "type": "file",
