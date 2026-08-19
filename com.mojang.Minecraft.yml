@@ -44,9 +44,9 @@ modules:
     sources:
       - type: extra-data
         filename: Minecraft.tar.gz
-        url: https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1.0.1221.tar.gz
-        sha256: cd9f0b44fc9cec42829cb2e71145ee599f3d34c7715b55963514d0a8d36214ab
-        size: 609508
+        url: https://launcher.mojang.com/download/Minecraft.tar.gz
+        sha256: 695269281547bbbcf47fe74633027a0e4ddc13a61060c686a7217e85d314e45e
+        size: 1102510
       - type: script
         dest-filename: apply_extra
         commands:
@@ -63,6 +63,8 @@ modules:
       - type: file
         path: com.mojang.Minecraft.png
       - type: file
+        path: com.mojang.Minecraft.svg
+      - type: file
         path: com.mojang.Minecraft.appdata.xml
     build-commands:
       - install -Dm755 apply_extra /app/bin/apply_extra
@@ -71,4 +73,5 @@ modules:
       - install -Dp -m 644 com.mojang.Minecraft-64.png /app/share/icons/hicolor/64x64/apps/com.mojang.Minecraft.png
       - install -Dp -m 644 com.mojang.Minecraft-128.png /app/share/icons/hicolor/128x128/apps/com.mojang.Minecraft.png
       - install -Dp -m 644 com.mojang.Minecraft.png /app/share/icons/hicolor/256x256/apps/com.mojang.Minecraft.png
+      - install -Dp -m 644 com.mojang.Minecraft.svg /app/share/icons/hicolor/symbolic/apps/com.mojang.Minecraft.svg
       - install -Dp -m 644 com.mojang.Minecraft.appdata.xml /app/share/appdata/com.mojang.Minecraft.appdata.xml
