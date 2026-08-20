@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.mojang.Minecraft</id>
-  <name>Minecraft</name>
-  <name xml:lang="ar">ماين كرافت</name>
-  <name xml:lang="bn">মাইনক্রাফ্ট</name>
-  <name xml:lang="es">Minecraft</name>
-  <name xml:lang="fr">Minecraft</name>
-  <name xml:lang="hi">Minecraft</name>
-  <name xml:lang="id">Minecraft</name>
-  <name xml:lang="pt_BR">Minecraft</name>
-  <name xml:lang="ro">Minecraft</name>
-  <name xml:lang="th">Minecraft</name>
-  <name xml:lang="vi">Minecraft</name>
-  <name xml:lang="zh_CN">Minecraft</name>
-  <name xml:lang="zh_TW">Minecraft</name>
+  <name>Minecraft Launcher</name>
+  <name xml:lang="ar">Minecraft Launcher</name>
+  <name xml:lang="bn">Minecraft Launcher</name>
+  <name xml:lang="es">Minecraft Launcher</name>
+  <name xml:lang="fr">Minecraft Launcher</name>
+  <name xml:lang="hi">Minecraft Launcher</name>
+  <name xml:lang="id">Minecraft Launcher</name>
+  <name xml:lang="pt_BR">Minecraft Launcher</name>
+  <name xml:lang="ro">Minecraft Launcher</name>
+  <name xml:lang="th">Minecraft Launcher</name>
+  <name xml:lang="vi">Minecraft Launcher</name>
+  <name xml:lang="zh_CN">Minecraft Launcher</name>
+  <name xml:lang="zh_TW">Minecraft Launcher</name>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Create your own world in one of the most popular video games</summary>
   <summary xml:lang="ar">أنشئ عالمك الخاص في واحدة من ألعاب الفيديو الأكثر شعبية</summary>
@@ -53,7 +53,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <developer_name>Mojang AB</developer_name>
   <releases>
-    <release version="1.0.1221" date="2022-04-04"/>
+    <release version="2.1.3" date="2026-04-23"/>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">moderate</content_attribute>
